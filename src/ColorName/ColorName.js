@@ -1,5 +1,6 @@
 import React  from 'react';
 import './ColorName.css';
+import Colorize from "./Colorize";
 
 function ColorName() {
 	return (
@@ -11,7 +12,8 @@ function ColorName() {
 				Examples: <span className="color--red">red</span> <span className="color--blue">blue</span>
 			</p>
 
-			{ /* Insert your new component here */ }
+			 <Colorize color='red'/>
+			<Colorize color='blue'/>
 
 		</div>
 	)
