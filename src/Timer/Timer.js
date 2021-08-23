@@ -8,6 +8,7 @@ function Timer() {
 		let interval = setInterval(()=>{
 			setSeconds(prev => prev+1);
 		},1000);
+	return ()=> clearInterval(interval);
 	},[]);
 
 
